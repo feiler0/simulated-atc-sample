@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>真实特情录音｜陆空通话卡片样例</title>
+<style>
+  :root {
+    --bg: #06121d;
+    --panel: rgba(8, 47, 59, 0.72);
+    --panel-solid: #082f3b;
+    --border: #1e5b6a;
+    --accent: #38bdf8;
+    --amber: #f59e0b;
+    --text: #e5eef5;
+    --text-secondary: #c5d6dc;
+    --text-muted: #8ea9b8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  .shell {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 16px 14px 40px;
+  }
+  .app-head {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    min-height: 48px;
+    margin: 2px 0 12px;
+    color: #fff;
+  }
+  .app-head h1 {
+    margin: 0;
+    font-size: 1.06rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #f3fbff;
+    text-align: center;
+  }
+  .app-head p {
+    margin: 3px 0 0;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    text-align: center;
+  }
+  .card {
+    padding: 14px 14px 12px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--panel);
+  }
+  .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .card-kicker {
+    color: var(--accent);
+    font: 700 0.68rem ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    letter-spacing: 0.08em;
+  }
+  .turn-badge {
+    padding: 3px 9px;
+    border: 1px solid #3d7d8c;
+    border-radius: 8px;
+    color: #d7eef3;
+    font: 700 0.68rem ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: rgba(10, 58, 72, 0.9);
+    white-space: nowrap;
+  }
+  .card-main {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .card-callsign {
+    flex: 1 1 auto;
+    min-width: 0;
+    color: var(--amber);
+    font-size: clamp(1.4rem, 7.5vw, 2rem);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    line-height: 1;
+  }
+  .card-alt {
+    color: var(--accent);
+    font: 700 0.85rem ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    white-space: nowrap;
+    text-align: right;
+  }
+  .card-title {
+    margin: 6px 0 0;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+  .video-wrap {
+    margin-top: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1e5b6a;
+    background: #000;
+  }
+  .video-wrap iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+  .translation-block {
+    margin-top: 11px;
+    padding: 10px 12px;
+    border: 1px solid #2a6d7c;
+    border-radius: 12px;
+    background: rgba(6, 36, 46, 0.6);
+  }
+  .translation-label {
+    color: var(--accent);
+    font: 700 0.68rem ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+  .translation-block p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    line-height: 1.65;
+  }
+  .note {
+    margin-top: 14px;
+    color: var(--text-muted);
+    font-size: 0.76rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="app-head">
+    <h1>真实特情录音</h1>
+    <p>5 份原始 ATC 录音 · 中文翻译 · 卡片样例</p>
+  </header>
+
+  <!-- 1 -->
+  <section class="card">
+    <div class="card-head">
+      <span class="card-kicker">REAL ATC RECORDING</span>
+      <span class="turn-badge">原始录音 01</span>
+    </div>
+    <div class="card-main">
+      <div class="card-callsign">CACTUS 1549</div>
+      <div class="card-alt">US AIRWAYS 1549</div>
+    </div>
+    <p class="card-title">鸟击双发失效 · 哈德逊河迫降 · 2009-01-15</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/yVCeQ89BB_o" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="translation-block">
+      <div class="translation-label">中文翻译 / 通话大意</div>
+      <p>机组报告撞鸟后两个发动机失去推力，正在转向返回拉瓜迪亚；管制员先给出左转航向 220 并协调塔台停止离场。随后机组明确表示不确定能否到达任何跑道，询问右侧是否有可用机场（特特波罗）；最后说出“我们会进哈德逊河”。真实流程是：先报能力和意图，ATC 一边给可执行航向一边找可选机场。</p>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="card">
+    <div class="card-head">
+      <span class="card-kicker">REAL ATC RECORDING</span>
+      <span class="turn-badge">原始录音 02</span>
+    </div>
+    <div class="card-main">
+      <div class="card-callsign">UNITED 232</div>
+      <div class="card-alt">UA232 HEAVY</div>
+    </div>
+    <p class="card-title">尾发动机爆炸 · 全液压失效 · 苏城迫降 · 1989-07-19</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/-3YkiMDS5y8" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="translation-block">
+      <div class="translation-label">中文翻译 / 通话大意</div>
+      <p>机组报告二号发动机失效并宣布紧急情况，同时说明飞控有问题。管制员给出航向、下降高度和 22 号跑道，随后询问机上人数和剩余油量。机组报告 296 人、约 2 小时燃油，并多次说明控制受限、无法正常转弯。管制员保护空域、通知消防救援，并将 22 号跑道交给机组使用。</p>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="card">
+    <div class="card-head">
+      <span class="card-kicker">REAL ATC RECORDING</span>
+      <span class="turn-badge">原始录音 03</span>
+    </div>
+    <div class="card-main">
+      <div class="card-callsign">SOUTHWEST 1380</div>
+      <div class="card-alt">WN1380</div>
+    </div>
+    <p class="card-title">发动机非包容失效 · 机身破洞 · 费城备降 · 2018-04-17</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/FkVTdvcghHc" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="translation-block">
+      <div class="translation-label">中文翻译 / 通话大意</div>
+      <p>机组直接用 MAYDAY 报告一台发动机失效、机身破洞，并请求紧急下降和直飞费城。管制员确认紧急后询问人数、油量，清空前方交通，并让机组在费城 27 左/27 右中选择跑道。机组选择 27 左，管制员协调塔台并通知消防救援，最后给予落地许可。</p>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="card">
+    <div class="card-head">
+      <span class="card-kicker">REAL ATC RECORDING</span>
+      <span class="turn-badge">原始录音 04</span>
+    </div>
+    <div class="card-main">
+      <div class="card-callsign">QANTAS 32</div>
+      <div class="card-alt">QF32</div>
+    </div>
+    <p class="card-title">A380 发动机非包容失效 · 新加坡返航 · 2010-11-04</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/LEHmVMZv08Y" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="translation-block">
+      <div class="translation-label">中文翻译 / 通话大意</div>
+      <p>机组 MAYDAY 报告发动机失效和火警，请求返回新加坡并优先处置。管制员确认紧急、询问人数和油量（469 人、约 4 小时燃油）。因飞机超重，机组请求放油和等待区；管制员给 BAVAL 等待、保持 10000 英尺，协调消防救援并许可 20 左跑道落地。</p>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="card">
+    <div class="card-head">
+      <span class="card-kicker">REAL ATC RECORDING</span>
+      <span class="turn-badge">原始录音 05</span>
+    </div>
+    <div class="card-main">
+      <div class="card-callsign">AIR CANADA 143</div>
+      <div class="card-alt">AC143</div>
+    </div>
+    <p class="card-title">油量计算错误 · 双发停车 · Gimli 滑翔迫降 · 1983-07-23</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/--GrX58eoWg" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="translation-block">
+      <div class="translation-label">中文翻译 / 通话大意</div>
+      <p>机组报告燃油问题，表示无法飞往温尼伯，请求改降较近的 Gimli 机场。随后两个发动机全部停车，机组宣布 MAYDAY，报告 69 人，并明确说“我们是滑翔机，需要直线进近”。管制员立即清空区域交通、通知机场和救援，并提供 Gimli 32 号跑道方向和长度。</p>
+    </div>
+  </section>
+
+  <p class="note">原始录音来自公开 ATC 音频/公开 YouTube 频道；中文翻译为学习用通话大意，非官方译文。</p>
+</div>
+</body>
+</html>
